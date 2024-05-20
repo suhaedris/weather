@@ -12,7 +12,8 @@ res.sendFile(__dirname + "/index.html");
 
     });
     app.post("/", function (req, res) {
-            const query= req.body.city;
+            // const query= req.body.city;
+                const query= "London";
             const apiKey ="624e8a4acecd2e9b879f5cc4c8451956";
             const unit ="metric";
 
