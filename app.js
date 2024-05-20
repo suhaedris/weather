@@ -28,19 +28,15 @@ res.sendFile(__dirname + "/index.html");
             const icon = WeatherData.weather[0].icon
             const imageURL ="https://openweathermap.org/img/wn/"+ icon +"@2x.png"
             res.write("<p>The weather is currently  " + weaherDesc + "</p>");
-            res.write("<h1> The temprature in "+query+" is: " + temp + " Degrees Celsius. </h1>");
+            res.write("<h1> The temprature in "+ query+" is: " + temp + " Degrees Celsius. </h1>");
             res.write("<img src="+ imageURL+">");
             res.send();
         })
     })
+    })
 
 
-
-
-        })
-
-
-    app.listen(3001,function () {
+    app.listen(3000,function () {
         console.log("server in port 3001 listening")
     })
 
